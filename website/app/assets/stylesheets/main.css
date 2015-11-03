@@ -1,0 +1,140 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #dddddd;
+}
+
+.header {
+  /*width: 950px;*/
+  width: 100%;
+  height: 60px;
+  float: right;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.container .header h1 {
+  display: inline-block;
+  float: left;
+  font-size: 34px;
+  margin: 0;
+}
+
+.header .navigation {
+  display: inline-block;
+  margin: 0;
+  float: right;
+  padding: 0 75px 0 0;
+}
+
+.image {
+  display: inline-block;
+}
+
+.boxes {
+  width: 950px;
+  height: 700px;
+  display: inline-block;
+}
+
+
+.box .info1 {
+  text-align: justify;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+ .text_above .box{
+   color: #dddddd;
+   font-size: 24px;
+   background: linear-gradient(to right, #d62b2b, #da4040);
+   text-align: left;
+   height: 340px;
+   width: 940px;
+   margin: 0 10px 5px 10px;
+   float: right;
+
+}
+
+
+.text_above .box h2 {
+  padding: 0px 15px 5px 45px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text_below .box2 {
+  background: linear-gradient(to right, #008c78, #199785);
+  color: #dddddd;
+  float: right;
+  text-align: left;
+  height: 340px;
+  width: 940px;
+  margin: 5px 10px 0 10px;
+}
+
+
+/*.text_below .box2 h2 {
+  padding: 0 15px 0 15px;
+  font-weight: bold;
+  font-size: 30px;
+}*/
+
+
+.text_below h2 {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 10px 0 0 15px;
+}
+
+/*.projects {
+  display:inline-block;
+  width: 950px;
+  height: 300px;
+  margin: 50px 0 0 0
+
+}*/
+
+
+ .P1 {
+  display: inline-block;
+  text-align: center;
+  width: 231px;
+  height: 330px;
+  float: left;
+  padding: 20px 41px 0 41px;
+}
+
+.P1 .round {
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.P2 {
+  display: inline-block;
+  text-align: center;
+  width: 231px;
+  height: 330px;
+  float: right;
+  padding: 20px 41px 0 41px;
+}
+
+.P2 .round {
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.P3 {
+  display:inline-block;
+  text-align: center;
+  width: 231px;
+  height: 330px;
+  float: left;
+  padding: 20px 41px 0 41px;
+}
+
+.P3 .round {
+  border-radius: 20px;
+  border: 2px solid black;
+
+}
