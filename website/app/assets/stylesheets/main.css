@@ -1,21 +1,25 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #dddddd;
+  /*background-color: #008c78;*/
 }
 
 .header {
-  /*width: 950px;*/
-  width: 100%;
+  display: inline-block;
+  color: #5d5c58;
+  width: 1355px;
   height: 60px;
-  float: right;
+  float: left;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
+
+
 .container .header h1 {
   display: inline-block;
   float: left;
-  font-size: 34px;
+  font-size: 38px;
   margin: 0;
 }
 
@@ -23,7 +27,16 @@ body {
   display: inline-block;
   margin: 0;
   float: right;
-  padding: 0 75px 0 0;
+  width: 450px;
+}
+
+.header .navigation .buttons p {
+  display: inline-block;
+  color: #5d5c58;
+  float: left;
+  width: auto;
+  padding: 10px;
+
 }
 
 .image {
@@ -44,9 +57,9 @@ body {
 }
 
  .text_above .box{
-   color: #dddddd;
-   font-size: 24px;
-   background: linear-gradient(to right, #d62b2b, #da4040);
+   color: #5d5c58;
+   font-size: 20px;
+   background-color: #cccccc;
    text-align: left;
    height: 340px;
    width: 940px;
@@ -62,9 +75,9 @@ body {
   font-size: 30px;
 }
 
-.text_below .box2 {
-  background: linear-gradient(to right, #008c78, #199785);
-  color: #dddddd;
+.text_below .box {
+  background-color: #cccccc;
+  color: #5d5c58;
   float: right;
   text-align: left;
   height: 340px;
@@ -106,7 +119,7 @@ body {
 }
 
 .P1 .round {
-  border-radius: 20px;
+  border-radius: 6px;
   border: 2px solid black;
 }
 
@@ -120,7 +133,7 @@ body {
 }
 
 .P2 .round {
-  border-radius: 20px;
+  border-radius: 6px;
   border: 2px solid black;
 }
 
@@ -134,7 +147,7 @@ body {
 }
 
 .P3 .round {
-  border-radius: 20px;
+  border-radius: 6px;
   border: 2px solid black;
 
 }
