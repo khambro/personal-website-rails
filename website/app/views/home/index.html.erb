@@ -1,32 +1,18 @@
 <html>
-  <head>
-    <title>Karen Hambro
-    </title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="favicon.png"/>
-    <link href="/css/hover-min.css" rel="stylesheet">
-  </head>
+
   <body>
-    <div class="container">
-      <div class="header">
-        <h1>Karen Hambro</h2>
-        <div class = "navigation">
-           <div class = "buttons">
-             <p>Projects</p>
-             <p>//</p>
-             <p>Blog</p>
-           </div>
-          <a href= "mailto:khambro@gmail.com" class="hvr-float-shadow" ><img class="email" src="/assets/email.png"></a>
-          <a href= "https://www.linkedin.com/pub/karen-hambro/a/94b/349" class="hvr-float-shadow" ><img class="linkedin" src="/assets/linkedin.png"/></a>
-          <a href= "https://twitter.com/khambro?lang=en" class="hvr-float-shadow" ><img class="twitter" src= "/assets/twitter.png"/></a>
-          <a href= "https://github.com/khambro"class="hvr-float-shadow" ><img class="github" src= "/assets/github.png"/></a>
+
+
+    <div class = "left">
+      <div class= "image">
+        <img src="/assets/KBC.jpg"/>
+      </div>
+      <div class= "small">
+        <p>I will be building the following apps throughout the next year. Stay tuned for progress, and don't hesitate to reach out if you would like to help build them!</p>
+        <div class="arrows">
+          <i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i>
         </div>
       </div>
-    </div>
-
-    <div class= "image">
-      <img src="/assets/KBC.jpg"/>
     </div>
 
 
@@ -34,16 +20,15 @@
     <div class= "boxes">
       <div class= "text_above">
         <div class="box">
+          <h2>Some things about me:</h2>
           <div class="info1">
-            <p>Hi! I'm Karen Hambro, a software developer in training at Code Builders. I have worked in the tech industry for quite a few years, most recently with Ada Developers Academy. Having worked to place over 60 women in software development roles in local tech companies, it's now my turn to build, create, and start down the path of my own adventures in programming.
+            <p>Hi! I'm Karen Hambro, a software developer in training at <a href= "http://code.builders/">Code Builders.</a> I have worked in the tech industry for quite a few years, most recently with <a href= "http://adadevelopersacademy.org/">Ada Developers Academy</a>. Having worked to place over 60 women in software development roles in local tech companies, it's now my turn to build, create, and start down the path of my own adventures in programming.
             <hr>
 
-            With a backgound in healthcare access and non-profit management, I seek to build tools that are useful and accessible to all members of our community.
+            With a backgound in healthcare access and non-profit management, I seek to build tools that are useful and accessible to all members of our community. Hopefully my first big project will be a quick-find app so non-English speakers can easily know what benefits their insurance covers and what providers speak their language or offer translation.
             <hr>
 
             I spend my free time hanging out with my dogs, hanging out with other people's dogs, kayaking, brewing beer, taking photos, relaxing with friends and family, and dancing whenever possible.
-
-
             </p>
           </div>
         </div>
@@ -51,20 +36,25 @@
 
       <div class = "text_below">
         <div class = "box">
-          <h2>Some things about me:</h2>
+
+          <% @about.shuffle.each do |about| %>
+
           <div class = "P1">
-            <a href="http://code.builders/"><img class="round" src="/assets/small_CB.jpg"/></a>
-              <p>I love coming to Code Builders every day!</p>                                                                </div>
-          <div class="P2">
-            <img class="round" src="/assets/barcelona.jpg"/>
-             <p>I spent 4 years living in Barcelona and attended graduate school there. I look forward to the day I can make it my second home.</p>
+            <img class="round" src= <%= about[:photo] %>/>
+              <p><%= about[:p] %></p>
           </div>
-          <div class="P3">
-            <img class="round" src="/assets/small_lightbground.jpeg"/>
-            <p>My family is pretty great. It's made up of one human, James, and two rescue mutts, Wolfie and Beastie.</p>
-          </div>
+          <% end %>
 
         </div>
+      </div>
+
+      <div class= "apps">
+          <% @projects.shuffle.each do |projects| %>
+        <div class = "P1">
+          <img class="round" src= <%= projects[:photo] %>/>
+              <p><%= projects[:p] %></p>
+        </div>
+          <% end %>
       </div>
     </div>
 

@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Website</title>
+  <title>Karen Hambro</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css" />
+  <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <link href="/css/hover-min.css" rel="stylesheet">
 </head>
 <body>
+
+  <div class="container">
+    <div class="header">
+      <h1><a href="/" class="hvr-float-shadow">Karen Hambro</a></h1>
+      <div class = "navigation">
+         <div class = "buttons">
+           <p><a href = "/blog" class="hvr-float-shadow">Blog</a></p>
+           <p>//</p>
+           <p><a href = "/resume" class="hvr-float-shadow">Resume</a></p>
+         </div>
+          <div class = "icons">
+            <a href= "mailto:khambro@gmail.com" class="hvr-float-shadow" ><i class="fa fa-envelope-square fa-lg"></i></a>
+            <a href= "https://www.linkedin.com/pub/karen-hambro/a/94b/349" class="hvr-float-shadow" ><i class="fa fa-linkedin fa-lg"></i></a>
+            <a href= "https://twitter.com/khambro?lang=en" class="hvr-float-shadow" ><i class="fa fa-twitter fa-lg"></i></a>
+            <a href= "https://github.com/khambro"class="hvr-float-shadow" ><i class="fa fa-github fa-lg"></i></a>
+          </div>
+      </div>
+    </div>
+  </div>
 
 <%= yield %>
 
