@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Karen Hambro</title>
+  <title> <%=@title%> </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css" />
   <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
   <link rel="icon" type="image/png" href="/favicon.png"/>
@@ -13,14 +14,15 @@
 </head>
 <body>
 
+
   <div class="container">
     <div class="header">
-      <h1><a href="/" class="hvr-float-shadow">Karen Hambro</a></h1>
+      <h1><%= link_to "Karen Hambro", "/", class:"hvr-float-shadow"%></h1>
       <div class = "navigation">
          <div class = "buttons">
-           <p><a href = "/blog" class="hvr-float-shadow">Blog</a></p>
+           <p><%= link_to "Blog", "/blog", class:"hvr-float-shadow"%></p>
            <p>//</p>
-           <p><a href = "/resume" class="hvr-float-shadow">Resume</a></p>
+           <p><%=link_to "Resume", "/resume", class: "hvr-float-shadow"%></p>
          </div>
           <div class = "icons">
             <a href= "mailto:khambro@gmail.com" class="hvr-float-shadow" ><i class="fa fa-envelope-square fa-lg"></i></a>

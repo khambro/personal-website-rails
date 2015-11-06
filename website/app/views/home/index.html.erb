@@ -1,18 +1,23 @@
 <html>
 
+
   <body>
 
 
     <div class = "left">
       <div class= "image">
-        <img src="/assets/KBC.jpg"/>
+        <%= image_tag "KBC.jpg" %>
       </div>
       <div class= "small">
-        <p>I will be building the following apps throughout the next year. Stay tuned for progress, and don't hesitate to reach out if you would like to help build them!</p>
-        <div class="arrows">
-          <i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i><i class="fa fa-arrow-right fa-4x"></i>
+        <p>I will be building the following apps throughout the next year. Stay tuned for progress.
+        <p>In the meantime, here is your <span class = "bold">fortune for the day:</span></p>
+        <div class= "fortune">
+          <% f = FortuneCookie.new %>
+        <i class="fa fa-quote-left fa-lg"></i>  <%= f.fortune %><i class="fa fa-quote-right fa-lg"></i>
         </div>
-      </div>
+        </p>
+
+       </div>
     </div>
 
 
@@ -22,10 +27,10 @@
         <div class="box">
           <h2>Some things about me:</h2>
           <div class="info1">
-            <p>Hi! I'm Karen Hambro, a software developer in training at <a href= "http://code.builders/">Code Builders.</a> I have worked in the tech industry for quite a few years, most recently with <a href= "http://adadevelopersacademy.org/">Ada Developers Academy</a>. Having worked to place over 60 women in software development roles in local tech companies, it's now my turn to build, create, and start down the path of my own adventures in programming.
+            <p>Hi! I'm Karen Hambro, a software developer in training at <%= link_to "Code Builders", "http://code.builders/", class: "a" %>. I have worked in the tech industry for quite a few years, most recently with <%= link_to 'Ada Developers Academy', 'http://adadevelopersacademy.org/', class: "a" %>. Having worked to place over 60 women in software development roles in local tech companies, it's now my turn to build, create, and start down the path of my own adventures in programming.
             <hr>
 
-            With a backgound in healthcare access and non-profit management, I seek to build tools that are useful and accessible to all members of our community. Hopefully my first big project will be a quick-find app so non-English speakers can easily know what benefits their insurance covers and what providers speak their language or offer translation.
+            <!-- With a backgound in healthcare access and non-profit management, I seek to build tools that are useful and accessible to all members of our community. Hopefully my first big project will be a quick-find app so non-English speakers can easily know what benefits their insurance covers and what providers speak their language or offer translation. -->
             <hr>
 
             I spend my free time hanging out with my dogs, hanging out with other people's dogs, kayaking, brewing beer, taking photos, relaxing with friends and family, and dancing whenever possible.
@@ -40,7 +45,7 @@
           <% @about.shuffle.each do |about| %>
 
           <div class = "P1">
-            <img class="round" src= <%= about[:photo] %>/>
+            <%= image_tag about[:photo], class:"round" %>
               <p><%= about[:p] %></p>
           </div>
           <% end %>
@@ -51,7 +56,7 @@
       <div class= "apps">
           <% @projects.shuffle.each do |projects| %>
         <div class = "P1">
-          <img class="round" src= <%= projects[:photo] %>/>
+          <%= image_tag projects[:photo], class:"round" %>
               <p><%= projects[:p] %></p>
         </div>
           <% end %>
