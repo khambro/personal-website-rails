@@ -101,7 +101,7 @@ body {
 }
 
 .small p{
-  font-size: 20px;
+  font-size: 15px;
   padding: 0px 0px 0 20px;
   color: #46494C;
 }
@@ -109,11 +109,11 @@ body {
 .small .fortune {
   font-size: 30px;
   padding: 10px;
-  margin: 10px;
-  color: #1b0d69;
+  margin: 40px;
+  color: #4C5C68;
   font-family: 'Poiret One', cursive;
   font-weight: bolder;
-  border: 4px dotted #1b0d69;
+  border: 4px dotted #4C5C68;
 }
 
 .small .bold {
@@ -130,7 +130,7 @@ body {
 
 
 .box .info1 {
-  text-align: justify;
+  text-align: left;
   width: 600px;
   height: 220px;
   padding: 0 90px 90px 90px;
@@ -151,7 +151,7 @@ body {
    text-align: left;
    height: 340px;
    width: 800px;
-   margin: 0 10px 5px 10px;
+   margin: 0 10px 0 10px;
    float: right;
 
 }
@@ -161,7 +161,7 @@ body {
   font-family: 'Cantarell', sans-serif;
   padding: 10px 15px 0 85px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   /*font-family: "Open Sans", sans-serif;*/
   margin: 0;
 }
@@ -171,9 +171,9 @@ body {
   color: #46494C;
   float: right;
   text-align: left;
-  height: 340px;
+  height: 350px;
   width: 800px;
-  margin: 5px 10px 0 10px;
+  margin: 0 10px 0 10px;
 }
 
 
@@ -232,7 +232,6 @@ body {
 .posts {
   color: #46494C;
   font-size: 16px;
-  opacity: .7;
   background-color: #C5C3C6;
   text-align: left;
   height: 1300px;
