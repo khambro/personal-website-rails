@@ -8,6 +8,14 @@
 
     <div class = "center">
       <h2>my projects</h2>
+        <div class= "apps">
+            <% @projects.shuffle.each do |projects| %>
+            <div class = "P1">
+              <%= image_tag projects[:photo], class:"round" %>
+                <p><%= projects[:p] %></p>
+            </div>
+          <% end %>
+        </div>
     </div>
 
 
@@ -18,7 +26,17 @@
 
       <p>I spend my free time hanging out with my dogs, hanging out with other people's dogs, kayaking, brewing beer, taking photos, relaxing with friends and family, and dancing whenever possible.</p>
 
+      <p class= "fortune">
+        Your fortune for the day:
+        <div class= "fortunes">
+          <% f = FortuneCookie.new %>
+        <i class="fa fa-quote-left fa-lg"></i>  <%= f.fortune %><i class="fa fa-quote-right fa-lg"></i>
+        </div>
+      </p>
+
     </div>
+
+
 
 
 
