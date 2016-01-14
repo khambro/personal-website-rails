@@ -3,12 +3,15 @@
 
     <div class= "upper twelve columns">
       <h2>full stack ruby developer in training</h2>
+      <a class = "button" href= "mailto:khambro@gmail.com">let's talk!</a>
     </div>
+
+
 
 
     <div class = "center twelve columns">
       <h2>my projects</h2>
-        <div class= "apps">
+        <div class= "apps twelve columns">
             <% @projects.shuffle.each do |projects| %>
             <div class = "P1">
               <%= image_tag projects[:photo], class:"round" %>
